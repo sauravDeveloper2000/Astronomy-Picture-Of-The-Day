@@ -18,8 +18,6 @@ import retrofit2.HttpException
 import java.io.IOException
 import javax.inject.Inject
 
-//https://api.nasa.gov/planetary/apod?api_key=c6821RAviMgVrtNabIkBdNO0JUwnX5H8PLxTqmBC
-
 
 @HiltViewModel
 class ApodViewModel @Inject constructor(
