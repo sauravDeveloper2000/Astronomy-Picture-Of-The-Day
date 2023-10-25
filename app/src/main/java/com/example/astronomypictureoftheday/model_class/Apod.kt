@@ -9,7 +9,7 @@ data class Apod(
     val date: String,
     val explanation: String,
     @SerialName("hdurl")
-    val hdUrl: String,
+    val hdUrl: String? = null,
     @SerialName("media_type")
     val mediaType: String? = null,
     @SerialName("service_version")

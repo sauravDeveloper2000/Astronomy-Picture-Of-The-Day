@@ -117,19 +117,35 @@ fun ApodScreen(
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Center
             )
-            AsyncImage(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .clip(RoundedCornerShape(12.dp)),
-                model = ImageRequest.Builder(LocalContext.current)
-                    .data(apod.hdUrl)
-                    .crossfade(true)
-                    .build(),
-                contentDescription = null,
-                contentScale = ContentScale.FillWidth,
-                error = painterResource(id = R.drawable.ic_broken_image_24),
-                placeholder = painterResource(id = R.drawable.loading)
-            )
+            if (apod.hdUrl != null){
+                AsyncImage(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(12.dp)),
+                    model = ImageRequest.Builder(LocalContext.current)
+                        .data(apod.hdUrl)
+                        .crossfade(true)
+                        .build(),
+                    contentDescription = null,
+                    contentScale = ContentScale.FillWidth,
+                    error = painterResource(id = R.drawable.ic_broken_image_24),
+                    placeholder = painterResource(id = R.drawable.loading)
+                )
+            } else{
+                AsyncImage(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(12.dp)),
+                    model = ImageRequest.Builder(LocalContext.current)
+                        .data(apod.url)
+                        .crossfade(true)
+                        .build(),
+                    contentDescription = null,
+                    contentScale = ContentScale.FillWidth,
+                    error = painterResource(id = R.drawable.ic_broken_image_24),
+                    placeholder = painterResource(id = R.drawable.loading)
+                )
+            }
             Text(
                 text = apod.explanation,
                 fontSize = 14.sp,

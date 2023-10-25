@@ -1,4 +1,5 @@
-import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
+import org.jetbrains.kotlin.konan.properties.Properties
+
 
 plugins {
     id("com.android.application")
@@ -6,9 +7,12 @@ plugins {
     id("org.jetbrains.kotlin.plugin.serialization") version "1.8.10"
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
+
 }
 
+android.buildFeatures.buildConfig = true
 android {
+
     namespace = "com.example.astronomypictureoftheday"
     compileSdk = 33
 
@@ -23,14 +27,17 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+        val properties = Properties()
+        properties.load(project.rootProject.file("local.properties").inputStream())
+        buildConfigField("String", "API_KEY", "\"${properties.getProperty("API_KEY")}\"")
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
         }
     }
