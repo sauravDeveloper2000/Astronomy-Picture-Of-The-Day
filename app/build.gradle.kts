@@ -7,7 +7,6 @@ plugins {
     id("org.jetbrains.kotlin.plugin.serialization") version "1.8.10"
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
-
 }
 
 android.buildFeatures.buildConfig = true
