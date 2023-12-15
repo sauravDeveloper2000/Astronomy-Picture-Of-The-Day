@@ -33,7 +33,7 @@ Insert gif or link to demo
 
 
 ## Screenshots
-![WhatsApp Image 2023-12-15 at 7 54 43 PM (1)](https://github.com/sauravDeveloper2000/Astronomy-Picture-Of-The-Day/assets/153507758/2dcf6d91-d7f7-4550-a140-a0bef686a635| width=100, height=100)
+![WhatsApp Image 2023-12-15 at 7 54 43 PM (1)](https://github.com/sauravDeveloper2000/Astronomy-Picture-Of-The-Day/assets/153507758/2dcf6d91-d7f7-4550-a140-a0bef686a635|width=100,height=100)
 ![WhatsApp Image 2023-12-15 at 7 54 43 PM](https://github.com/sauravDeveloper2000/Astronomy-Picture-Of-The-Day/assets/153507758/ff25c7a8-81d1-4783-bcce-5bacb29e666b)
 ![Pic 1](https://github.com/sauravDeveloper2000/Astronomy-Picture-Of-The-Day/assets/153507758/77067cf9-f7dc-4a4a-b68e-d83daa78143f)
 
