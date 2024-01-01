@@ -1,6 +1,7 @@
 package com.example.astronomypictureoftheday
 
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -36,8 +37,8 @@ fun ApodApp(
             color = MaterialTheme.colorScheme.background
         ) {
             HomeScreen(
+                modifier = Modifier.padding(it),
                 apodUiState = apodUiState,
-                contentPadding = it,
                 retryAction = retryAction
             )
         }
@@ -52,10 +53,10 @@ fun ApodTopBar(
     TopAppBar(
         scrollBehavior = scrollBehaviour,
         title = {
-            Text(text = stringResource(id = R.string.app_name))
-        },
-        colors = TopAppBarDefaults.mediumTopAppBarColors(
-            containerColor = Color(0xffbdbebd)
-        )
+            Text(
+                text = stringResource(id = R.string.app_name),
+                style = MaterialTheme.typography.displaySmall
+            )
+        }
     )
 }
