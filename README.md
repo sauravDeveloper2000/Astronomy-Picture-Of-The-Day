@@ -6,7 +6,7 @@ Astronomy Picture Of the Day app shows today's astronomy picture to the user wit
 
 ## Tech Stack
 
-**UI:-**  JetPack Compose.
+**UI:-**  JetPack Compose, Material Design3.
 
 **Programming Language:-** Kotlin
 
@@ -27,13 +27,9 @@ Astronomy Picture Of the Day app shows today's astronomy picture to the user wit
 
 
 
-https://github.com/sauravDeveloper2000/Astronomy-Picture-Of-The-Day/assets/153507758/5b8f6b2f-6074-47ea-9479-0b392e27530c
-
-Insert gif or link to demo
+https://github.com/sauravDeveloper2000/Astronomy-Picture-Of-The-Day/assets/153507758/f86be010-67d1-43d4-8f16-f1855bb54935
 
 
-## Screenshots
-![WhatsApp Image 2023-12-15 at 7 54 43 PM (1)](https://github.com/sauravDeveloper2000/Astronomy-Picture-Of-The-Day/assets/153507758/2dcf6d91-d7f7-4550-a140-a0bef686a635)
-![WhatsApp Image 2023-12-15 at 7 54 43 PM](https://github.com/sauravDeveloper2000/Astronomy-Picture-Of-The-Day/assets/153507758/ff25c7a8-81d1-4783-bcce-5bacb29e666b)
-![Pic 1](https://github.com/sauravDeveloper2000/Astronomy-Picture-Of-The-Day/assets/153507758/77067cf9-f7dc-4a4a-b68e-d83daa78143f)
+
+
 
